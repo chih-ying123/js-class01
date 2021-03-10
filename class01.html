@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js練習1</title>
+    
+
+    <style>
+        body{
+            background:rgba(0,0,0,.4);
+        }
+        body>div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+        .div_group div{
+            margin: 10px 3px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        table{
+            background-color: #ccc;
+            border: 1px solid #fff;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 0 20px;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="control_div">
+        控制Div屬性
+        <div class="button_group">
+            <button id="width_btn">變寬</button>
+            <button id="height_btn">變高</button>
+            <button id="color_btn">變色</button>
+            <button id="hidden_btn">隱藏</button>
+            <button id="reset_btn">重置</button>
+        </div>
+        <div id="control_box" style="width:50px; height:50px; background:black;"></div>
+    </div>
+    
+    <div class="change_bgcolor">
+        變更網頁背景顏色
+        <div class="bgcolor_group" style="display: flex;">
+            <div class="bgcolor_red" style="width:20px; height:20px; background:red;"></div>
+            <div class="bgcolor_green" style="width:20px; height:20px; background:green;"></div>
+            <div class="bgcolor_blue" style="width:20px; height:20px; background:blue;"></div>
+        </div>
+        
+        <table>
+            <thead>
+                <td>新聞</td>
+                <td>娛樂</td>
+                <td>體育</td>
+                <td>電影</td>
+                <td>音樂</td>
+                <td>旅遊</td>
+            </thead>
+        </table>
+    </div>
+
+    <div class="alert_2">
+        接收參數並彈出提醒視窗
+        <div class="box">
+            <input type="text" placeholder="參數1">
+            <input type="text" placeholder="參數2">
+            <input type="submit" value="送出">
+        </div>
+        
+    </div>
+
+    <div class="change_divcolor">
+        用迴圈將div變色
+        <button>變色</button>
+        <div class="div_group" style="display: flex;">
+            <div class="divcolor1"></div>
+            <div class="divcolor2"></div>
+            <div class="divcolor3"></div>
+        </div>
+        
+    </div>
+
+    <div class="hover_style">
+        游標移入/移出改變樣式
+        <div class="hover_box" style="width: 150px; height: 150px; background: #000;"></div>
+    </div>
+
+    <div class="password1">
+        記住密碼顯示提示框
+        <input type="checkbox" name="checkbox1">記住密碼
+    </div>
+
+    <div class="password2">
+        <input type="checkbox" name="checkbox2">記住密碼2
+    </div>
+
+    <script src="script.js" type="text/javascript"></script>
+
+</body>
+</html>
