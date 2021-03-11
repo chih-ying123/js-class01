@@ -42,12 +42,12 @@ bgcolor_red.addEventListener('click',function(){
 
 bgcolor_green.addEventListener('click',function(){
     body_bg.style.backgroundColor = 'rgba(0,180,0,.3)';
-    table_bg.style.backgroundColor = 'rgba(0,180,0,.8)';
+    table_bg.style.backgroundColor = 'rgba(0,130,0,.8)';
 });
 
 bgcolor_blue.addEventListener('click',function(){
     body_bg.style.backgroundColor = 'rgba(0,100,150,.3)';
-    table_bg.style.backgroundColor = 'rgba(0,100,150,.8)';
+    table_bg.style.backgroundColor = 'rgba(0,100,130,.8)';
 });
 
 /*--alert*2--*/
@@ -92,4 +92,15 @@ checkbox1.addEventListener('mouseenter',function(){
 });
 checkbox1.addEventListener('mouseout',function(){
     note.style.display = 'none';
+});
+
+let checkbox2 = document.querySelector('.checkbox2')
+let note2 = document.querySelector('.note2')
+checkbox2.addEventListener('mouseenter',function(){
+    note2.style.opacity = '1';
+    note2.style.top = '40px'
+});
+checkbox2.addEventListener('mouseout',function(){
+    note2.style.opacity = '0';
+    note2.style.top = '20px'
 });
